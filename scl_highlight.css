@@ -1,0 +1,74 @@
+/* SCL语言语法高亮CSS */
+
+/* 基础样式 */
+.scl-code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+/* 关键字高亮 */
+.scl-keyword {
+    color: #7f0055;
+    font-weight: bold;
+}
+
+/* 字符串高亮 */
+.scl-string {
+    color: #2a00ff;
+}
+
+/* 注释高亮 */
+.scl-comment {
+    color: #3f7f5f;
+    font-style: italic;
+}
+
+/* 操作符高亮 */
+.scl-operator {
+    color: #000000;
+}
+
+/* 数字高亮 */
+.scl-number {
+    color: #990000;
+}
+
+/* 特定关键字类 */
+.scl-simp { color: #7f0055; font-weight: bold; }
+.scl-sout { color: #7f0055; font-weight: bold; }
+.scl-set { color: #7f0055; font-weight: bold; }
+.scl-sui { color: #7f0055; font-weight: bold; }
+.scl-time { color: #7f0055; font-weight: bold; }
+.scl-sif { color: #7f0055; font-weight: bold; }
+.scl-sle { color: #7f0055; font-weight: bold; }
+.scl-swhile { color: #7f0055; font-weight: bold; }
+
+/* 行号样式 */
+.scl-line-numbers {
+    display: inline-block;
+    width: 40px;
+    color: #999;
+    text-align: right;
+    margin-right: 16px;
+    user-select: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .scl-code {
+        font-size: 13px;
+        padding: 12px;
+    }
+    
+    .scl-line-numbers {
+        width: 30px;
+        margin-right: 12px;
+    }
+}
